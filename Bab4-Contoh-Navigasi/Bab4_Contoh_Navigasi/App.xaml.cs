@@ -13,7 +13,11 @@ namespace Bab4_Contoh_Navigasi
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new FormNavigasi1());
+            var myNav = new NavigationPage(new FormNavigasi1());
+            myNav.BarBackgroundColor = Color.Black;
+            myNav.BarTextColor = Color.White;
+            
+            MainPage = myNav;
         }
 
         protected override void OnStart()

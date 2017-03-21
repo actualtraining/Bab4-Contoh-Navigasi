@@ -18,6 +18,8 @@ namespace Bab4_Contoh_Navigasi
             btnForm1.Clicked += BtnForm1_Clicked;
         }
 
+       
+
         private async void BtnForm1_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();

@@ -2,9 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Bab4_Contoh_Navigasi.FormNavigasi2" Title="Form Navigasi 2">
-    <StackLayout>
-        <Label Text="Parameter :" FontSize="Medium" />
-        <Entry x:Name="txtParameter" Placeholder="insert parameter" />
-        <Button x:Name="btnForm1" Text="Ke Halaman 1" />
-    </StackLayout>
+
+  
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Parameter :" FontSize="Medium" />
+            <Entry x:Name="txtParameter" Placeholder="insert parameter" />
+            <Button x:Name="btnForm1" Text="Ke Halaman 1" />
+        </StackLayout>
+      
+    </ContentPage.Content>
 </ContentPage>
