@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bab4_Contoh_Navigasi.FormNavigasi1" Title="Form Navigasi 1">
+    <StackLayout>
+        <Label Text="Parameter 1 :" FontSize="Medium" />
+        <Entry x:Name="txtParameter" Placeholder="insert parameter 1" />
+        <Button x:Name="btnHal2" Text="Ke Halaman 2" />
+    </StackLayout>
+</ContentPage>
