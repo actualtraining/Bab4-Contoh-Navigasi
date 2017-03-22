@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:Bab4_Contoh_Navigasi;assembly=Bab4_Contoh_Navigasi"
              x:Class="Bab4_Contoh_Navigasi.SampleTab" Title="Contoh Tab">
     <TabbedPage.Children>
-        
+        <local:SampleAlertPage Title="Alert"  Icon="home.png" />
+        <local:ActionSheetPage Title="Action Sheet" Icon="icon.png" />
+        <local:FormNavigasi1 Title="Sample Form" Icon="icon.png" />
     </TabbedPage.Children>
 </TabbedPage>

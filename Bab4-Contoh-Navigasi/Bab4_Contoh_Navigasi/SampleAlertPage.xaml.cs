@@ -16,5 +16,6 @@ namespace Bab4_Contoh_Navigasi
         {
             InitializeComponent();
         }
+
     }
 }
