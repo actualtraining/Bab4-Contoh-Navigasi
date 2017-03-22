@@ -51,6 +51,7 @@
     <Compile Include="FormNavigasi2.xaml.cs">
       <DependentUpon>FormNavigasi2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

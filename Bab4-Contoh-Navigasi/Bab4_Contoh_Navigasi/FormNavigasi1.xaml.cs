@@ -29,6 +29,12 @@ namespace Bab4_Contoh_Navigasi
             menuNavigasi2.Clicked += MenuNavigasi2_Clicked;
 
             btnCurrAppParam.Clicked += BtnCurrAppParam_Clicked;
+            btnGlobal.Clicked += BtnGlobal_Clicked;
+        }
+
+        private void BtnGlobal_Clicked(object sender, EventArgs e)
+        {
+            Global.Instance.DataPengguna = new Pengguna { Username = "Budi", Password = "rahasia", Aturan = "admin" };
         }
 
         private async void BtnCurrAppParam_Clicked(object sender, EventArgs e)

@@ -14,6 +14,8 @@
             <Button x:Name="btnHal2" Text="Ke Halaman 2" />
 
             <Button x:Name="btnCurrAppParam" Text="Ambil App Param" />
+
+            <Button x:Name="btnGlobal" Text="Ambil Param dari Global" />
         </StackLayout>
      
     </ContentPage.Content>
