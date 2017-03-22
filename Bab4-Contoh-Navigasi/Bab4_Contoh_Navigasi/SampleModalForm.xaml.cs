@@ -12,10 +12,41 @@ namespace Bab4_Contoh_Navigasi
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SampleModalForm : ContentPage
     {
-        
+        private List<Contact> listContacts;
         public SampleModalForm()
         {
             InitializeComponent();
+
+            SetupData();
+            listview.ItemsSource = listContacts;
+        }
+
+        void SetupData()
+        {
+            listContacts = new List<Contact>
+            {
+                new Contact
+                {
+                    Name = "Tim Olsen",
+                    Age = 35,
+                    Occupation = "Lecturer",
+                    Country = "USA"
+                },
+                new Contact
+                {
+                    Name = "Mika Shaura",
+                    Age = 50,
+                    Occupation = "Lecturer",
+                    Country = "Japan"
+                },
+                new Contact
+                {
+                    Name = "Iwan Setiawan",
+                    Age = 45,
+                    Occupation = "Dean",
+                    Country = "Indonesia"
+                }
+            };
         }
     }
 }
