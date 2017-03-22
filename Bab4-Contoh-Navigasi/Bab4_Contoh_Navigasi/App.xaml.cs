@@ -13,7 +13,7 @@ namespace Bab4_Contoh_Navigasi
         {
             InitializeComponent();
 
-            var myNav = new NavigationPage(new FormNavigasi1());
+            var myNav = new NavigationPage(new SampleModalForm());
             myNav.BarBackgroundColor = Color.Black;
             myNav.BarTextColor = Color.White;
             

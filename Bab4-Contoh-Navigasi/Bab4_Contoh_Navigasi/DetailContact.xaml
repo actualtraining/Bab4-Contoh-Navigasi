@@ -29,7 +29,7 @@
             <Label Text="Country :" FontSize="Medium" Grid.Row="3" Grid.Column="0" />
             <Entry Text="{Binding Country}" Grid.Row="3" Grid.Column="1" />
 
-            <Button x:Name="btnDismiss" Text="Dismiss" Grid.Row="4" Grid.Column="1" />
+            <Button x:Name="btnDismiss" Text="Dismiss" Grid.Row="4" Grid.Column="1" Clicked="btnDismiss_Clicked" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

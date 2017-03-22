@@ -22,11 +22,14 @@ namespace Bab4_Contoh_Navigasi
             listview.ItemSelected += Listview_ItemSelected;
         }
 
-        private void Listview_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void Listview_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (listview.SelectedItem != null)
             {
-               
+                var detailPage = new DetailContact();
+                var currContanct = e.SelectedItem as Contact;
+                detailPage.BindingContext = currContanct;
+                await Navigation.PushModalAsync(detailPage);
             }
         }
 

@@ -16,5 +16,10 @@ namespace Bab4_Contoh_Navigasi
         {
             InitializeComponent();
         }
+
+        private async void btnDismiss_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
