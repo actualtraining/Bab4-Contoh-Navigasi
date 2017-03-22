@@ -33,7 +33,7 @@ namespace Bab4_Contoh_Navigasi
 
         private async void BtnHal2_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FormNavigasi2());
+            await Navigation.PushAsync(new FormNavigasi2(txtParameter.Text));
         }
     }
 }
