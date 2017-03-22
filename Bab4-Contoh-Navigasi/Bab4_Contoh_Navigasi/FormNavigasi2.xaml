@@ -9,6 +9,8 @@
             <Label Text="Parameter :" FontSize="Medium" />
             <Entry x:Name="txtParameter" Placeholder="insert parameter" />
             <Button x:Name="btnForm1" Text="Ke Halaman 1" />
+
+            <Button x:Name="btnParam" Text="Check Parameter" />
         </StackLayout>
       
     </ContentPage.Content>
