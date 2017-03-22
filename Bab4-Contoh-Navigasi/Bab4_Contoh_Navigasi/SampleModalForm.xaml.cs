@@ -12,6 +12,7 @@ namespace Bab4_Contoh_Navigasi
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SampleModalForm : ContentPage
     {
+        
         public SampleModalForm()
         {
             InitializeComponent();
