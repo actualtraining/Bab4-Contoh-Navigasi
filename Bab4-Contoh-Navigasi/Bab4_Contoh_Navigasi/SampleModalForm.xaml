@@ -9,6 +9,12 @@
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="listview">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Detail="{Binding Occupation}" Text="{Binding Name}" 
+                                  TextColor="Red" DetailColor="Blue" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>
