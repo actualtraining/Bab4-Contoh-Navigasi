@@ -15,7 +15,7 @@ namespace Bab4_Contoh_Navigasi
 
             //Application.Current.Properties["pengguna"] = "Erick Kurniawan";
             //var myNav = new SampleTab();
-            var myNav = new NavigationPage(new FormNavigasi1());
+            var myNav = new PEBMasterPage();
             //myNav.BarBackgroundColor = Color.Black;
             //myNav.BarTextColor = Color.White;
             MainPage = myNav;

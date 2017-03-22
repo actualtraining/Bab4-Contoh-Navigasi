@@ -15,6 +15,19 @@ namespace Bab4_Contoh_Navigasi
         public PEBMasterPage()
         {
             InitializeComponent();
+
+            pebMasterDetailMenu.ListViewMenu.ItemSelected += ListViewMenu_ItemSelected;
+        }
+
+        private void ListViewMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as PEBMasterPageItem;
+            if (item != null)
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                pebMasterDetailMenu.ListViewMenu.SelectedItem = null;
+                IsPresented = false;
+            }
         }
     }
 }

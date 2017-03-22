@@ -32,6 +32,8 @@ namespace Bab4_Contoh_Navigasi
                     TargetType = typeof(PEBMasterDetailContact)
                 }
             };
+
+            listView.ItemsSource = masterPageItem;
         }
     }
 }
