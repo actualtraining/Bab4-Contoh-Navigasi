@@ -12,6 +12,8 @@
             <Label Text="Parameter 1 :" FontSize="Medium" />
             <Entry x:Name="txtParameter" Placeholder="insert parameter 1" />
             <Button x:Name="btnHal2" Text="Ke Halaman 2" />
+
+            <Button x:Name="btnCurrAppParam" Text="Ambil App Param" />
         </StackLayout>
      
     </ContentPage.Content>

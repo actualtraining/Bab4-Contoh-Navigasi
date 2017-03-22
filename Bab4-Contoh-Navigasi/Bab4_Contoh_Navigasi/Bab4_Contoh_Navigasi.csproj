@@ -54,6 +54,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pengguna.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleAlertPage.xaml.cs">
       <DependentUpon>SampleAlertPage.xaml</DependentUpon>

@@ -25,6 +25,13 @@ namespace Bab4_Contoh_Navigasi
             this.param = param;
             btnForm1.Clicked += BtnForm1_Clicked;
             btnParam.Clicked += BtnParam_Clicked;
+            btnGetAppParam.Clicked += BtnGetAppParam_Clicked;
+        }
+
+        private async void BtnGetAppParam_Clicked(object sender, EventArgs e)
+        {
+            var param = (Pengguna)Application.Current.Properties["pengguna"];
+            await DisplayAlert("Keterangan", "Param dr app param : " + param.Username + " "+param.Aturan, "OK");
         }
 
         private async void BtnParam_Clicked(object sender, EventArgs e)

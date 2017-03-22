@@ -15,10 +15,28 @@ namespace Bab4_Contoh_Navigasi
         public FormNavigasi1()
         {
             InitializeComponent();
+            var currUser = new Pengguna
+            {
+                Username = "erick",
+                Password = "rahasia",
+                Aturan = "admin"
+            };
+            Application.Current.Properties["pengguna"] = currUser;
+
             btnHal2.Clicked += BtnHal2_Clicked;
 
             menuHome.Clicked += MenuHome_Clicked;
             menuNavigasi2.Clicked += MenuNavigasi2_Clicked;
+
+            btnCurrAppParam.Clicked += BtnCurrAppParam_Clicked;
+        }
+
+        private async void BtnCurrAppParam_Clicked(object sender, EventArgs e)
+        {
+            var param = (Pengguna)Application.Current.Properties["pengguna"];
+
+            //Application.Current.Properties["pengguna"] = "Budi";
+            await DisplayAlert("Keterangan", "Param dr app param : " + param.Username + " " + param.Aturan,"OK");
         }
 
         private async void MenuNavigasi2_Clicked(object sender, EventArgs e)

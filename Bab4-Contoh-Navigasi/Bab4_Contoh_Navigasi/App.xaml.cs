@@ -13,11 +13,11 @@ namespace Bab4_Contoh_Navigasi
         {
             InitializeComponent();
 
+            //Application.Current.Properties["pengguna"] = "Erick Kurniawan";
             //var myNav = new SampleTab();
             var myNav = new NavigationPage(new FormNavigasi1());
             //myNav.BarBackgroundColor = Color.Black;
             //myNav.BarTextColor = Color.White;
-            
             MainPage = myNav;
         }
 
