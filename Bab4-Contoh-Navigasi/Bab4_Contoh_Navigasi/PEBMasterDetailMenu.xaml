@@ -4,7 +4,8 @@
              x:Class="Bab4_Contoh_Navigasi.PEBMasterDetailMenu" Title="PEB Menu">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
-            <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+            
+            <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
