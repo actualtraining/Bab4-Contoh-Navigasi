@@ -26,6 +26,14 @@ namespace Bab4_Contoh_Navigasi
             btnForm1.Clicked += BtnForm1_Clicked;
             btnParam.Clicked += BtnParam_Clicked;
             btnGetAppParam.Clicked += BtnGetAppParam_Clicked;
+
+            btnAmbilGlobal.Clicked += BtnAmbilGlobal_Clicked;
+        }
+
+        private async void BtnAmbilGlobal_Clicked(object sender, EventArgs e)
+        {
+            var pengguna = (Pengguna)Global.Instance.DataPengguna;
+            await DisplayAlert("Keterangan", "Data pengguna " + pengguna.Username + " " + pengguna.Password,"OK");
         }
 
         private async void BtnGetAppParam_Clicked(object sender, EventArgs e)

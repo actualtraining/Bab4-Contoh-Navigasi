@@ -12,6 +12,7 @@
 
             <Button x:Name="btnParam" Text="Check Parameter" />
             <Button x:Name="btnGetAppParam" Text="Get App Param" />
+            <Button x:Name="btnAmbilGlobal" Text="Ambil Nilai dari Global" />
         </StackLayout>
       
     </ContentPage.Content>
