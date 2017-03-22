@@ -10,14 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Bab4_Contoh_Navigasi
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PEBMasterDetailContact : ContentPage
+    public partial class PEBMasterDetailHome : ContentPage
     {
-      
-        public PEBMasterDetailContact()
+        public PEBMasterDetailHome()
         {
             InitializeComponent();
-
-           
         }
     }
 }
