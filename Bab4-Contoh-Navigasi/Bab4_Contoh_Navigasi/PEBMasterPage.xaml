@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Bab4_Contoh_Navigasi;assembly=Bab4_Contoh_Navigasi"
              x:Class="Bab4_Contoh_Navigasi.PEBMasterPage" Title="PEB">
     <MasterDetailPage.Master>
-        
+        <local:PEBMasterDetailMenu x:Name="pebMasterDetailMenu" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
-        
+        <NavigationPage>
+            <x:Arguments>
+                <local:PEBMasterDetailContact />
+            </x:Arguments>
+        </NavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>
