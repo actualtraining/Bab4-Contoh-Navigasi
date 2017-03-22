@@ -16,6 +16,9 @@ namespace Bab4_Contoh_Navigasi.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            base.Window.RequestFeature(WindowFeatures.ActionBar);
+            base.SetTheme(Resource.Style.MainTheme);
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
